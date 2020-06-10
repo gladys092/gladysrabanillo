@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Abel', sans-serif;
+	color: #e6e6e6;
+}
+/* general */
+.list-group {
+	display: none;
+}
+hr {
+	background: #cccccc;
+}
+.btn {
+	font-size: 20px;
+	font-weight: 600;
+	color: #333333;
+	background: #ffffff;
+	padding: 10px;
+}
+.section-title {
+	margin-left: 7vh;
+	padding-top: 2cm;
+}
+.primary-text {
+	color: #ffffff;
+}
+
+/* top section */
+.top-image {
+	height: 240px;
+	width: 240px;
+	border-radius: 50%;
+	margin-bottom: 2vh;
+}
+/* top name */
+.top-name {
+	width: 100%;
+	text-align: center;
+}
+.top-name h3 {
+	font-size: 5vh;
+	font-family: 'Great Vibes', cursive;
+	padding-top: .7cm;
+		padding-bottom: .3cm;
+}
+
+/* info section */
+/* #infosec nav */
+#infosec li .active {
+	font-weight: 600;
+	color: #333333;
+	background: #ffffff;
+}
+#infosec li a {
+	color: #cccccc;
+}
+/* card */
+.tab-content {
+	padding-top: 3vh;
+}
+.card {
+	background: #333333;
+}
+.card-img {
+	display: none;
+}
+
+/* album section */
+/* carousel */
+.carousel-control-prev {
+	width: 12%;
+	background: gray;
+	cursor: pointer;
+}
+.carousel-control-next {
+	width: 12%;
+	background: gray;
+}
+.carousel-inner {
+	border: 5px solid #333333;
+}
+
+/* account section  */
+.social-space {
+	display: flex;
+	flex-direction: column;
+}
+#accountsec a {
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin-bottom: 7vh;
+}
+#accountsec a .fa-facebook-f {
+	padding: 20px;
+	width: 90px;
+  	background: #3B5998;
+}
+#accountsec a .fa-twitter {
+	padding: 20px;
+  	width: 90px;
+  	background: #55ACEE;
+}
+#accountsec a .fa-instagram {
+	padding: 20px;
+  	width: 90px;
+  	background: #ff5700;
+}
+
+/* footer section */
+/* footer fonts */
+.footer-spacing {
+	height: 10vh;
+	line-height: 10vh;
+	text-align: center;
+}
+.footer-spacing i {
+	font-size: 20px;
+	margin-right: 10px;
+}
+.footer-spacing a {
+	color: #737373;
+}
+.bot-icon {
+	font-size: 20px;
+	padding: 10px;
+	border: 2px solid #333333;
+  	border-radius: 50%;
+	background: #333333;
+	color: gray;
+}
+
+/* container */
+.inner-container {
+	margin-top: 1cm;
+		margin-left: 7vh;
+		margin-right: 7vh;
+}
+.outer-container {
+	width: 100%;
+	min-height: 100vh;
+	background: #1a1a1a;
+}
+.carousel-container {
+	margin-top: 1cm;
+		margin-left: 7vh;
+		margin-right: 7vh;
+}
+.account-container {
+	min-height: 70vh;
+	background: #1a1a1a;
+}
+footer {
+	min-height: 30vh;
+	background: #111;
+}
+
+@media only screen and (min-width: 1000px) {
+	/* general */
+	.section-title {
+		margin-left: 9cm;
+		padding-top: 1cm;
+	}
+
+	/* top section */
+
+
+	/* info section */
+	/* card */
+	.card-img {
+		display: block;
+	}
+
+	/* album section */
+	/* accounts section */
+	.fab:hover {
+	    opacity: 0.7;
+	}
+	.footer-spacing a:hover {
+		color: #e6e6e6;
+	}
+	.social-space {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		padding-top: 2cm;
+	}
+	footer {
+		display: flex;
+		justify-content: space-around;
+		padding-top: 1.5cm;
+	}
+
+	/* container */
+	.inner-container {
+		margin-top: 1cm;
+			margin-left: 9cm;
+			margin-right: 9cm;
+	}
+	.carousel-container {
+		margin-top: 1cm;
+			margin-left: 11cm;
+			margin-right: 11cm;
+	}
+
+	/* navigation */
+	.list-group {
+		display: block;
+		width: 90px;
+		position: fixed;
+		margin-top: 20vh;
+			margin-left: 5cm;
+	}
+	.list-group a {
+		display: block;
+		padding-top: 25px;
+			padding-bottom: 25px;
+		text-decoration: none;
+		text-align: center;
+		color: #818181;
+		font-weight: 600;
+		font-size: 17px;
+		background: #1a1a1a;
+		border: 1px solid #1a1a1a;
+	}
+	.list-group a:hover {
+		color: #f1f1f1;
+		background: #1a1a1a;
+	}
+	.list-group a.active {
+		border-radius: 10px;
+		border: 1px solid #333333;
+		background: #333333;
+		color: #f1f1f1;
+	}
+}
